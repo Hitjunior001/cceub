@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap');
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  box-sizing: border-box;
+}
+*{
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+}
+.logo{
+  display: none;
+}
+header{
+  background: rgb(66,21,78);
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+#navbar-horizontal{
+  height: 42px;
+  text-align: center;
+  background: rgb(66,21,78);
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  margin: 0;
+  align-items: center;
+}
+.navbar-horizontal-itens a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+#navbar-horizontal li{
+  padding: 0px 10px 0px 0px;
+}
+.navbar-horizontal-itens{
+  text-align: center;
+  background: rgb(66,21,78);
+  display: flex;
+  align-items: center;
+}
+#navbar-horizontal a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+#navbar-horizontal a:hover{
+  color: #d11ad1;
+  transition: 1s;
+}
+
+#navbar-vertical{
+  margin-top: -5rem;
+  width: 5rem;
+  height: 100vh;
+  background: rgb(66,21,78);
+  z-index: 2;
+  position: fixed;
+  transition: width 100ms ease;
+}
+#navbar-vertical:hover {
+  width: 12rem;
+}
+#navbar-vertical:hover .text-vertical{
+  display: block;
+  transition: width 100ms ease;
+}
+.navbar-vertical-itens{
+  position: fixed;
+  background: rgb(66,21,78);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.logo-vertical{
+  width: 100%;
+  background: #400240;
+/*   border: 1px solid; */
+}
+ .link-vertical{
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  fill: #aa08aa;
+ }
+.link-vertical svg{
+  min-width: 2rem;
+  max-width: 2rem;
+  margin: 0 1.5rem;
+}
+.link-vertical:hover{
+  fill: white;
+  transition: 200ms;
+}
+.text-vertical{
+  display: none;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+#navbar-vertical li:hover{
+  color: #d11ad1;
+  transition: 1s;
+  background: #1b1818;;
+}
+
+.item-vertical{
+  width: 100%;
+}
+#welcome{
+  margin-left: 5rem;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+#button-mobile{
+  display: none;
+}
+#logout{
+  border: 0;
+  background:rgb(66,21,78);
+  width: 50px;
+  fill: #aa08aa;
+}
+#logout:hover{
+  fill: white;
+  transition: 1s;
+}
+
+
+/* PARA TELAS MENORES QUE 615PIXELS!! */
+@media only screen and (max-width:615px){
+  body{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  #navbar-vertical{
+    display: none;
+    position: fixed;
+
+  }
+  #button-mobile{
+    display: block;
+    background: rgb(66,21,78);
+    border: 0;
+  }
+  #button-mobile div{
+    background: white;
+    margin: 8px;
+    height: 2px;
+    width: 30px;
+}
+  #navbar-vertical.active{
+  display: block;
+  position: fixed;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin-top: 2px;
+}
+#navbar-vertical:hover {
+  width: 0;
+}
+#navbar-vertical:hover .text-vertical{
+  display: none;
+  transition: width 100ms ease;
+}
+  header{
+  background: rgb(66,21,78);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid black;;
+}
+.logo{
+  display: none;
+}
+#welcome{
+  margin-left: 5rem;
+}
+#welcome.active{
+  margin-top: 4rem;
+  margin-left: 0;
+}
+}

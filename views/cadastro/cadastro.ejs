@@ -1,0 +1,44 @@
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cadastro - E-Ceub</title>
+  <link href="/cadastro/cadastro.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+<header>
+    <nav id="navbar-horizontal">
+    <ul class="navbar-horizontal-itens">
+      <li class = "item-horizontal"><a href = "login">Login</a>  <!-- Item4 -->
+    </ul>
+    </nav>
+</header>
+
+<section class ="signup">
+<form action='/register' method='post' >
+  <h2> Cadastro</h2>
+  <input type='text' name = 'name' placeholder= "nome" class="signup-input">
+  <input type='tel' name = 'phone' placeholder= '(61)999999999' class="signup-input" maxlength="11">
+  <input type='email' name = 'email' placeholder= 'email' class="signup-input">
+  <input type='password' name = 'password' placeholder ='senha' class="signup-input">
+  <input type='password' placeholder ='confirma a senha' class="signup-input">
+  <input type='number' name = 'age' placeholder= 'idade' class="signup-input" maxlength="2" min='17' max="99">
+  <input type="submit" value='Cadastrar' class="signup-bottom">
+  <% if (messages.error){ %>
+    <div class = "alert">
+      <strong>
+        <%= msg%>
+      </strong>
+    </div>
+  <% } %>
+
+</form>
+</section>
+
+
+</body>
+  <script src="/cadastro/script.js"></script>
+</html>

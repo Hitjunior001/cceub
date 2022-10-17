@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login - E-Ceub</title>
+  <link href="/cadastro/cadastro.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+<header>
+    <nav id="navbar-horizontal">
+    <ul class="navbar-horizontal-itens">
+      <li class = "item-horizontal"><a href = "register">Cadastro</a>  <!-- Item4 -->
+    </ul>
+    </nav>
+</header>
+<section class ="signup">
+<form action = '/login' method='post' >
+  <h2> Login</h2>
+  <input type='email' name = 'email' placeholder= 'email' class ="signup-input">
+  <input type='password' name = 'password' placeholder ='senha' class ="signup-input">
+  <input type="submit" value='Login' class ="signup-bottom">
+
+  <% if (messages.error){ %>
+    <div class = "alert">
+      <strong>
+        <%= messages.error%>
+      </strong>
+    </div>
+  <% } %>
+</form>
+</section>
+</body>
+
+  <script src="script.js"></script>
+</html>

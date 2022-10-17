@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap');
+
+body, ul{
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+*{
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+
+}
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+input{
+  border-radius: 5px;
+  background: transparent;
+  height: 20px;
+  width: 200px;
+}
+
+header{
+  background: rgb(66,21,78);
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+#navbar-horizontal{
+  text-align: center;
+  background: rgb(66,21,78);
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.navbar-horizontal-itens a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+#navbar-horizontal li{
+  padding: 0px 10px 0px 0px;
+}
+.navbar-horizontal-itens{
+  text-align: center;
+  background: rgb(66,21,78);
+  display: flex;
+  align-items: center;
+}
+#navbar-horizontal a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+#navbar-horizontal a:hover{
+  color: #d11ad1;
+  transition: 1s;
+}
+.signup{
+  padding: 10px;
+}
+.signup-input{
+  margin: 10px;
+}
+form{
+  margin-top: 5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.signup-bottom{
+  background: purple;
+  height: 30px;
+}
+.signup-bottom:hover{
+  background: #c705c7;
+}
+.cadastro{
+  margin-top: 7rem;
+  text-align: center;
+  display: flex;
+  border: 1px solid purple;
+  flex-direction: column;
+}
+
+
+/* PARA TELAS MENORES QUE 615PIXELS!! */
+@media only screen and (max-width:615px){
+  body{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  header{
+  background: rgb(66,21,78);
+  display: flex;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 0;
+  border-bottom: 1px solid black;;
+}
+}
