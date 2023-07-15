@@ -13,7 +13,9 @@ Node.js devem estar instalados na máquina.
 2. Instale as dependências: `npm install`
 3. Crie um arquivo .env na raiz do projeto com as seguintes informações:
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/universidadeXYZ
+DB_USER = <USER>
+DB_PASS = <PASSWORD>
+DB_HOST = <HOST>
 
 less
 Copy code
